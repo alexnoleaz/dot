@@ -11,7 +11,12 @@ return {
         hl.DapUINormal = { bg = dark }
         hl.DapUINormalNC = { bg = dark }
         hl.WinBarNC = { bg = dark }
+        hl.WinBar = { bg = dark }
+        hl.TelescopeResultsBorder = { bg = dark, fg = dark }
+        hl.TelescopeResultsTitle = { fg = dark }
+        hl.TelescopePreviewBorder = { bg = dark, fg = dark }
         hl.SnacksPickerPreviewBorder = { bg = dark, fg = dark }
+        hl.SnacksWinBar = { bold = true, bg = dark, fg = colors.blue }
       end,
     },
   },

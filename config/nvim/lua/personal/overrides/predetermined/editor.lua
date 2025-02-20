@@ -8,9 +8,20 @@ return {
           preset = "vscode",
         },
       },
-      terminal = {
-        win = {
-          style = "minimal",
+      keys = {
+        {
+          "2<leader>ft",
+          function()
+            Snacks.terminal.get(nil, { cwd = LazyVim.root() })
+          end,
+          desc = "Terminal (Root Dir)",
+        },
+        {
+          "2<c-/>",
+          function()
+            Snacks.terminal.get(nil, { cwd = LazyVim.root() })
+          end,
+          desc = "Terminal (Root Dir)",
         },
       },
     },
@@ -27,6 +38,10 @@ return {
     "which-key.nvim",
     opts = {
       preset = "classic",
+      spec = {
+        mode = { "n", "v" },
+        { "<leader>O", group = "Obsidian" },
+      },
     },
   },
 }
