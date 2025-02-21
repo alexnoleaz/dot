@@ -11,13 +11,17 @@
     c = commit --short
     ci = commit --short
     p = push
-    l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --decorate --date=short --color --decorate
+    l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --decorate --date=short --color
+
+[include]
+    path = ~/.config/git/themes/tokyonight_moon.gitconfig
 
 [delta]
     navigate = true
     light = false
     side-by-side = false
     line-numbers = true
+    syntax-theme = tokyonight_moon
 
 [interactive]
     diffFilter = delta --color-only
