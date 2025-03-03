@@ -1,3 +1,7 @@
+[user]
+    name = Alexander Nole
+    email = cnole_azabache@outlook.com
+
 [core]
     pager = delta
     editor = nvim

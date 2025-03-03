@@ -2,6 +2,7 @@ return {
   {
     "tokyonight.nvim",
     opts = {
+      style = "night",
       on_highlights = function(hl, colors)
         local bg = colors.bg
         local dark = colors.bg_dark
