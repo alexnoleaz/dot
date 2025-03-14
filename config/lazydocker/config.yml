@@ -1,0 +1,13 @@
+gui:
+  nerdFontsVersion: "3"
+  # Tokyonight Night
+  theme:
+    activeBorderColor:
+      - "#ff9e64"
+      - "bold"
+    inactiveBorderColor:
+      - "#27a1b9"
+    optionsTextColor:
+      - "#7aa2f7"
+    selectedLineBgColor:
+      - "#283457"
