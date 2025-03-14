@@ -1,0 +1,46 @@
+# Backup and temporary files
+*.swp
+*.swo
+*.bak
+*.tmp
+*.log
+*.DS_Store
+
+# User-specific configuration files
+.zsh_history
+.bash_history
+.npmrc
+.node_repl_history
+.python_history
+.sqlite_history
+
+# Local Git configurations
+.gitconfig.local
+.gitignore_global
+
+# Editor-specific settings
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Build and cache files
+*.o
+*.pyc
+*.class
+*.cache
+*.ccls-cache
+*.mypy_cache/
+*.venv/
+__pycache__/
+
+# Shell and terminal configurations (if you prefer to keep them private)
+local/
+config/fish/fish_history
+config/lazygit/state.yml
+config/yazi/plugins
+
+# Neovim-specific configurations
+config/nvim/undo/
+config/nvim/backup/
+config/nvim/swap/
