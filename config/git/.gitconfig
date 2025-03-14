@@ -1,0 +1,42 @@
+[core]
+  pager = delta
+  editor = nvim
+
+[color]
+  ui = true
+
+[alias]
+  st = status -sb
+  co = checkout
+  c = commit --short
+  ci = commit --short
+  p = push
+  l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --decorate --date=short --color
+
+[include]
+    path = ~/.config/git/theme.gitconfig
+
+[delta]
+  navigate = true
+  light = false
+  side-by-side = false
+  line-numbers = true
+  syntax-theme = tokyonight_night
+
+[interactive]
+  diffFilter = delta --color-only
+
+[init]
+  defaultBranch = main
+
+[diff]
+  colorMoved = default
+
+[merge]
+  conflictstyle = diff3
+
+[credential "https://github.com"]
+  helper = !$(which gh) auth git-credential
+
+[credential "https://gist.github.com"]
+  helper = !$(which gh) auth git-credential
