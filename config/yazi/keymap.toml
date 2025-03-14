@@ -1,0 +1,15 @@
+[manager]
+prepend_keymap = [
+  { on = [
+    "u",
+    "e",
+  ], run = "plugin eza-preview", desc = "Toggle tree/list dir preview" },
+
+  { on = [
+    "C",
+  ], run = "plugin ouch --args=zip", desc = "Compress with ouch" },
+  { on = [
+    "g",
+    "l",
+  ], run = "plugin lazygit", desc = "run lazygit" },
+]

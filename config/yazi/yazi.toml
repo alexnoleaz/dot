@@ -1,0 +1,25 @@
+[manager]
+ratio = [2, 3, 4]
+
+[opener]
+edit = [
+  { run = '$EDITOR "$@"', block = true, for = "unix" },
+  { run = '%EDITOR% "%*"', block = true, for = "windows" },
+]
+extract = [
+  { run = 'ouch d -y "%*"', desc = "Extract here with ouch", for = "windows" },
+  { run = 'ouch d -y "$@"', desc = "Extract here with ouch", for = "unix" },
+]
+
+[plugin]
+prepend_previewers = [
+  { name = "*.md", run = "mdcat" },
+  { name = "*/", run = "eza-preview" },
+  { mime = "application/*zip", run = "ouch" },
+  { mime = "application/x-tar", run = "ouch" },
+  { mime = "application/x-bzip2", run = "ouch" },
+  { mime = "application/x-7z-compressed", run = "ouch" },
+  { mime = "application/x-rar", run = "ouch" },
+  { mime = "application/x-xz", run = "ouch" },
+  { name = "*.exe", run = "hexyl" },
+]
