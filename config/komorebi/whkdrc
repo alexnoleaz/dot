@@ -1,0 +1,79 @@
+.shell pwsh
+
+# RUN APPLICATIONS
+lwin + return            : Start-Process wezterm -WindowStyle hidden
+lwin + s                 : Start-Process $env:USERPROFILE\scoop\apps\flow-launcher\current\Flow.Launcher.exe
+lwin + b                 : Start-Process $env:LOCALAPPDATA\BraveSoftware\Brave-Browser\Application\brave.exe
+
+# WIN + FUNCTION KEYS
+lwin + f                 : komorebic toggle-maximize
+lwin + q                 : komorebic close
+
+# WIN + SHIFT KEYS
+lwin + shift + q         : komorebic close
+lwin + shift + r         : taskkill /f /im whkd.exe; Start-Process whkd -WindowStyle hidden; komorebic reload-configuration
+
+# KOMOREBI LAYOUT KEYS
+lwin + n                 : komorebic change-layout bsp
+lwin + space             : komorebic cycle-layout next
+
+# CHANGE FOCUS
+lwin + up                : komorebic focus up
+lwin + down              : komorebic focus down
+lwin + left              : komorebic focus left
+lwin + right             : komorebic focus right
+
+# RESIZE UP, DOWN, LEFT, RIGHT
+lwin + ctrl + up         : komorebic resize-axis vertical increase
+lwin + ctrl + down       : komorebic resize-axis vertical decrease
+lwin + ctrl + left       : komorebic resize-axis horizontal decrease
+lwin + ctrl + right      : komorebic resize-axis horizontal increase
+lwin + ctrl + k          : komorebic resize-axis vertical increase
+lwin + ctrl + j          : komorebic resize-axis vertical decrease
+lwin + ctrl + h          : komorebic resize-axis horizontal decrease
+lwin + ctrl + l          : komorebic resize-axis horizontal increase
+
+# FLIP LAYOUT
+lwin + alt + k           : komorebic flip-layout vertical
+lwin + alt + j           : komorebic flip-layout vertical
+lwin + alt + h           : komorebic flip-layout horizontal
+lwin + alt + l           : komorebic flip-layout horizontal
+
+# MOVE WINDOWS UP OR DOWN
+lwin + shift + k         : komorebic move up
+lwin + shift + j         : komorebic move down
+lwin + shift + h         : komorebic move left
+lwin + shift + l         : komorebic move right
+
+# TOGGLE FLOATING LAYOUT
+lwin + shift + space     : komorebic toggle-float
+
+# MOVE WINDOW TO NEXT SCREEN
+lwin + shift + right     : komorebic cycle-move-to-monitor next
+lwin + shift + left      : komorebic cycle-move-to-monitor previous
+
+# CHANGE WORKSPACES
+lwin + 1                 : komorebic focus-workspace 0
+lwin + 2                 : komorebic focus-workspace 1
+lwin + 3                 : komorebic focus-workspace 2
+lwin + 4                 : komorebic focus-workspace 3
+lwin + 5                 : komorebic focus-workspace 4
+lwin + 6                 : komorebic focus-workspace 5
+lwin + 7                 : komorebic focus-workspace 6
+lwin + 8                 : komorebic focus-workspace 7
+lwin + 9                 : komorebic focus-workspace 8
+lwin + tab               : komorebic cycle-monitor next
+lwin + shift + tab       : komorebic cycle-monitor previous
+alt + tab                : komorebic cycle-monitor next
+alt + shift + tab        : komorebic cycle-monitor previous
+
+# MOVE WINDOW TO SELECTED WORKSPACE 1-9 AND FOLLOW MOVED WINDOW TO WORKSPACE
+lwin + shift + 1         : komorebic move-to-workspace 0
+lwin + shift + 2         : komorebic move-to-workspace 1
+lwin + shift + 3         : komorebic move-to-workspace 2
+lwin + shift + 4         : komorebic move-to-workspace 3
+lwin + shift + 5         : komorebic move-to-workspace 4
+lwin + shift + 6         : komorebic move-to-workspace 5
+lwin + shift + 7         : komorebic move-to-workspace 6
+lwin + shift + 8         : komorebic move-to-workspace 7
+lwin + shift + 9         : komorebic move-to-workspace 8
