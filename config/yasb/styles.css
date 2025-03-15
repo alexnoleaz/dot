@@ -57,6 +57,17 @@
   font-weight: bold;
 }
 
+.home-menu {
+  background-color: var(--bg-popup);
+  border-radius: 8px;
+  padding: 0;
+  margin-left: 0px;
+}
+
+.home-menu .menu-item:hover {
+  background-color: var(--bg);
+}
+
 /* Komorebi workspaces widget */
 .komorebi-workspaces .ws-btn {
   background-color: var(--bg-dark);
@@ -99,7 +110,7 @@
 }
 
 .calendar .calendar-table::item:selected {
-  color: var(--green1);
+  color: var(--blue);
 }
 
 .calendar .day-label {
