@@ -7,7 +7,7 @@ export GIT_CONFIG_GLOBAL="$HOME/.config/git/.gitconfig"
 export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"
 
 ## For Windows
-local os=$(uname -s)
+os=$(uname -s)
 case "$os" in
 MINGW* | MSYS* | CYGWIN*)
   export XDG_CACHE_HOME="$HOME/.cache"
