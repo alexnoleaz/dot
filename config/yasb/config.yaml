@@ -1,0 +1,203 @@
+watch_stylesheet: true
+watch_config: true
+hide_taskbar: true
+bars:
+  primary-bar:
+    enabled: true
+    screens: ["*"]
+    class_name: "yasb-bar"
+    alignment:
+      position: "top"
+      center: false
+    animation:
+      enabled: true
+      duration: 1000
+    blur_effect:
+      enabled: false
+    window_flags:
+      always_on_top: false
+      windows_app_bar: true
+      hide_on_fullscreen: true
+    dimensions:
+      width: "100%"
+      height: 32
+    padding:
+      top: 7
+      right: 7
+      bottom: 0
+      left: 7
+    widgets:
+      left:
+        [
+          "home",
+          "komorebi_workspaces",
+          "active_window",
+          "komorebi_active_layout",
+        ]
+      center: ["clock"]
+      right: ["media", "bluetooth", "wifi", "volume", "battery", "power_menu"]
+widgets:
+  home:
+    type: "yasb.home.HomeWidget"
+    options:
+      label: "<span>\ue62a</span>"
+      menu_list:
+        - { title: "User Home", path: "~" }
+        - { title: "Downloads", path: "~/Downloads" }
+        - { title: "Documents", path: "~/Documents" }
+      power_menu: false
+      blur: true
+
+  komorebi_workspaces:
+    type: "komorebi.workspaces.WorkspaceWidget"
+    options:
+      label_workspace_btn: ""
+      label_workspace_active_btn: ""
+      label_workspace_populated_btn: ""
+      hide_if_offline: true
+
+  active_window:
+    type: "yasb.active_window.ActiveWindowWidget"
+    options:
+      label_icon_size: 13
+      max_length: 10
+
+  komorebi_active_layout:
+    type: "komorebi.active_layout.ActiveLayoutWidget"
+    options:
+      label: "{icon}"
+      layouts:
+        [
+          "bsp",
+          "columns",
+          "rows",
+          "grid",
+          "vertical_stack",
+          "horizontal_stack",
+          "ultrawide_vertical_stack",
+          "right_main_vertical_stack",
+        ]
+      layout_icons:
+        bsp: "BSP"
+        columns: "COLS"
+        rows: "ROWS"
+        grid: "GRID"
+        vertical_stack: "V-STACK"
+        horizontal_stack: "H-STACK"
+        ultrawide_vertical_stack: "W-STACK"
+        right_main_vertical_stack: "RMV-STACK"
+        monocle: "MONOCLE"
+        maximised: "MAX"
+        floating: "FLOATING"
+        paused: "PAUSED"
+      callbacks:
+        on_left: "next_layout"
+        on_right: "prev_layout"
+
+  clock:
+    type: "yasb.clock.ClockWidget"
+    options:
+      label: "<span>\udb80\udced</span> {%a %b %d %H:%M}"
+      update_interval: 1000
+      timezones: ["America/Lima"]
+      calendar:
+        alignment: "center"
+        direction: "down"
+      callbacks:
+        on_middle: "do_nothing"
+        on_right: "do_nothing"
+
+  media:
+    type: "yasb.media.MediaWidget"
+    options:
+      label: "[{title} - {artist}]"
+      hide_empty: true
+      callbacks:
+        on_left: "do_nothing"
+        on_middle: "do_nothing"
+        on_right: "do_nothing"
+      max_field_size:
+        label: 20
+      show_thumbnail: false
+      icons:
+        prev_track: "\udb81\udcae"
+        next_track: "\udb81\udcad"
+        play: "\uf04b"
+        pause: "\uf04c"
+
+  bluetooth:
+    type: "yasb.bluetooth.BluetoothWidget"
+    options:
+      label: "<span>{icon}</span>"
+      label_alt: "<span>{icon}</span>{device_name}"
+      icons:
+        bluetooth_on: "\udb80\udcaf"
+        bluetooth_off: "\udb80\udcb2"
+        bluetooth_connected: "\udb80\udcb1"
+      callbacks:
+        on_right: "exec cmd.exe /c start ms-settings:bluetooth"
+
+  wifi:
+    type: "yasb.wifi.WifiWidget"
+    options:
+      label: "<span>{wifi_icon}</span>"
+      label_alt: "{wifi_icon} {wifi_name}"
+      update_interval: 5000
+      callbacks:
+        on_right: "exec cmd.exe /c start ms-settings:network"
+        on_middle: "do_nothing"
+        on_left: "toggle_label"
+      wifi_icons: [
+          "\udb82\udd2e", # Icon for 0% strength
+          "\udb82\udd1f", # Icon for 1-20% strength
+          "\udb82\udd22", # Icon for 21-40% strength
+          "\udb82\udd25", # Icon for 41-80% strength
+          "\udb82\udd28", # Icon for 81-100% strength
+        ]
+
+  volume:
+    type: "yasb.volume.VolumeWidget"
+    options:
+      label: "<span>{icon}</span>"
+      volume_icons:
+        - "\ueee8" # Icon for muted
+        - "\uf026" # Icon for 0-10% volume
+        - "\uf027" # Icon for 11-30% volume
+        - "\uf027" # Icon for 31-60% volume
+        - "\uf028" # Icon for 61-100% volume
+      audio_menu:
+        blur: true
+        round_corners: true
+        round_corners_type: "normal"
+        border_color: "System"
+        alignment: "right"
+        direction: "down"
+      callbacks:
+        on_right: "toggle_volume_menu"
+        on_left: "toggle_mute"
+
+  battery:
+    type: "yasb.battery.BatteryWidget"
+    options:
+      label: "<span>{icon}</span> {percent}%"
+      charging_options:
+        icon_format: "{charging_icon}"
+      callbacks:
+        on_left: "do_nothing"
+
+  power_menu:
+    type: "yasb.power_menu.PowerMenuWidget"
+    options:
+      label: "\uf011"
+      uptime: true
+      blur: true
+      blur_background: true
+      animation_duration: 300 # Milisecond
+      button_row: 3 # Number of buttons in row, min 1 max 5
+      buttons:
+        lock: ["\uea75", "Lock"]
+        signout: ["\udb80\udf43", "Sign out"]
+        shutdown: ["\uf011", "Shut Down"]
+        restart: ["\uead2", "Restart"]
+        hibernate: ["\uf28e", "Hibernate"]
+        cancel: ["\udb81\udf3a", "Cancel"]
