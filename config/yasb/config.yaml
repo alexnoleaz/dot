@@ -55,6 +55,7 @@ widgets:
       label_workspace_active_btn: ""
       label_workspace_populated_btn: ""
       hide_if_offline: true
+      animation: true
 
   active_window:
     type: "yasb.active_window.ActiveWindowWidget"
