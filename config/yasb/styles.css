@@ -220,6 +220,7 @@
 /* Battery widget */
 .battery-widget {
   padding: 4px 8px;
+  margin-right: 0;
 }
 
 .battery-widget .icon {
