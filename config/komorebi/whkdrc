@@ -1,9 +1,9 @@
 .shell pwsh
 
 # RUN APPLICATIONS
-lwin + return            : Start-Process wezterm -WindowStyle hidden
+lwin + return            : Start-Process $env:USERPROFILE\scoop\shims\windowsterminal.exe
 lwin + s                 : Start-Process $env:USERPROFILE\scoop\apps\flow-launcher\current\Flow.Launcher.exe
-lwin + b                 : Start-Process $env:LOCALAPPDATA\BraveSoftware\Brave-Browser\Application\brave.exe
+lwin + b                 : Start-Process $env:USERPROFILE\scoop\shims\brave.exe
 
 # WIN + FUNCTION KEYS
 lwin + f                 : komorebic toggle-maximize
