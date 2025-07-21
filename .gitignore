@@ -39,6 +39,7 @@ local/
 config/fish/fish_history
 config/lazygit/state.yml
 config/yazi/plugins
+config/yazi/package.toml
 
 # Neovim-specific configurations
 config/nvim/undo/

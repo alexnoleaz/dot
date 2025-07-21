@@ -83,9 +83,6 @@ alias tobash="sudo chsh $USER -s /bin/bash && echo 'Now log out.'"
 alias tozsh="sudo chsh $USER -s /bin/zsh && echo 'Now log out.'"
 alias tofish="sudo chsh $USER -s /bin/fish && echo 'Now log out.'"
 
-## Fastfetch --short
-alias ff="fastfetch"
-
 ## Search content with ripgrep
 alias rg="rg --sort path"
 
@@ -107,6 +104,11 @@ alias grh="git reset --hard"
 
 ## Concatenate files with bat
 alias cat=$(command -v batcat || command -v bat)
+
+## Compress and decompress
+alias ouch="ouch -y -g"
+alias ouchc="ouch c"
+alias ouchd="ouch d"
 
 # Functions
 function _load_file_if_exists() {

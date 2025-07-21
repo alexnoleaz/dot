@@ -1,5 +1,8 @@
-ya pack --add GrzegorzKozub/mdcat
-ya pack --add ahkohd/eza-preview
-ya pack --add ndtoan96/ouch
-ya pack --add Reledia/hexyl
-ya pack --add Lil-Dank/lazygit
+#!/bin/sh
+
+ya pkg add GrzegorzKozub/mdcat
+ya pkg add ahkohd/eza-preview
+ya pkg add ndtoan96/ouch
+ya pkg add Reledia/hexyl
+ya pkg add Lil-Dank/lazygit
+ya pkg add Rolv-Apneseth/starship
