@@ -1,0 +1,201 @@
+{
+  "breadcrumbs.enabled": false,
+
+  "chat.commandCenter.enabled": false,
+  "clock.alignment": "Right",
+
+  "editor.fontFamily": "Iosevka Nerd Font",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 10,
+  "editor.formatOnSave": true,
+  "editor.hideCursorInOverviewRuler": true,
+  "editor.lineNumbers": "relative",
+  "editor.matchBrackets": "never",
+  "editor.minimap.enabled": false,
+  "editor.overviewRulerBorder": false,
+  "editor.padding.top": 10,
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.scrollbar.vertical": "hidden",
+  "editor.stickyScroll.enabled": false,
+  "editor.wordWrap": "on",
+  "editor.mouseWheelZoom": true,
+
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  "extensions.ignoreRecommendations": true,
+
+  "gitlens.codeLens.authors.enabled": false,
+  "gitlens.codeLens.recentChange.enabled": false,
+  "gitlens.hovers.currentLine.enabled": false,
+
+  "indenticator.color.dark": "rgba(42, 195, 222, 255)",
+  "indenticator.width": 0.1,
+
+  "java.compile.nullAnalysis.mode": "disabled",
+  "java.configuration.updateBuildConfiguration": "automatic",
+  "java.inlayHints.parameterNames.enabled": "none",
+
+  "lazygit-vscode.configPath": "~/.config/lazygit/config.yml",
+  "lazygit-vscode.panels": {
+    "sidebar": "hide",
+    "secondarySidebar": "hide",
+    "panel": "hide"
+  },
+
+  "redhat.telemetry.enabled": true,
+
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "terminal.integrated.fontFamily": "Iosevka Nerd Font",
+
+  "update.showReleaseNotes": false,
+
+  "vim.easymotion": true,
+  "vim.handleKeys": { "<C-s>": true },
+  "vim.highlightedyank.textColor": "#000",
+  "vim.highlightedyank.color": "#ff9e64",
+  "vim.highlightedyank.enable": true,
+  "vim.hlsearch": true,
+  "vim.incsearch": true,
+  "vim.leader": "<space>",
+  "vim.useSystemClipboard": true,
+  "vim.insertModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<C-s>"],
+      "commands": ["workbench.action.files.save"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<C-s>"],
+      "commands": ["workbench.action.files.save"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<C-s>"],
+      "commands": ["workbench.action.files.save"]
+    },
+    {
+      "before": ["K"],
+      "commands": ["editor.action.showHover"]
+    },
+    {
+      "before": ["<leader>", "g", "g"],
+      "commands": ["lazygit-vscode.toggle"]
+    },
+    {
+      "before": ["<leader>", "e"],
+      "commands": ["workbench.view.explorer"]
+    },
+    {
+      "before": ["<leader>", "<leader>"],
+      "commands": ["workbench.action.quickOpen"]
+    },
+    {
+      "before": ["<leader>", "c", "a"],
+      "commands": ["editor.action.quickFix"]
+    },
+    {
+      "before": ["<leader>", "/"],
+      "commands": ["workbench.action.quickTextSearch"]
+    },
+    {
+      "before": ["<leader>", "o"],
+      "commands": ["workbench.action.showAllSymbols"]
+    },
+    {
+      "before": ["<leader>", "|"],
+      "commands": ["workbench.action.splitEditorRight"]
+    },
+    {
+      "before": ["<leader>", "-"],
+      "commands": ["workbench.action.splitEditorDown"]
+    },
+    {
+      "before": ["<leader>", "b", "d"],
+      "commands": ["workbench.action.closeActiveEditor"]
+    },
+    {
+      "before": ["<leader>", "w", "d"],
+      "commands": ["workbench.action.closeActiveEditor"]
+    },
+    {
+      "before": ["<leader>", ","],
+      "commands": ["workbench.action.showAllEditors"]
+    },
+    {
+      "before": ["<leader>", "s", "c"],
+      "commands": ["workbench.action.showCommands"]
+    },
+    {
+      "before": ["<leader>", "c", "r"],
+      "commands": ["editor.action.rename"]
+    },
+    {
+      "before": ["<C-h>"],
+      "commands": ["workbench.action.focusLeftGroup"]
+    },
+    {
+      "before": ["<C-l>"],
+      "commands": ["workbench.action.focusRightGroup"]
+    },
+    {
+      "before": ["<C-j>"],
+      "commands": ["workbench.action.focusBelowGroup"]
+    },
+    {
+      "before": ["<C-k>"],
+      "commands": ["workbench.action.focusAboveGroup"]
+    }
+  ],
+
+  "window.commandCenter": false,
+  "window.controlsStyle": "hidden",
+  "window.dialogStyle": "custom",
+  "window.enableMenuBarMnemonics": false,
+  "window.menuBarVisibility": "hidden",
+  "window.title": "${dirty}${activeEditorShort}",
+  "window.titleBarStyle": "custom",
+  "workbench.activityBar.location": "hidden",
+  "workbench.colorTheme": "Tokyo Night",
+  "workbench.editor.editorActionsLocation": "hidden",
+  "workbench.editor.empty.hint": "hidden",
+  "workbench.editor.showTabs": "none",
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.layoutControl.enabled": false,
+  "workbench.startupEditor": "none",
+  "workbench.colorCustomizations": {
+    "[Tokyo Night]": {
+      "editorLineNumber.activeForeground": "#ff9e64",
+      "focusBorder": "#16161e",
+      "panel.border": "#16161e",
+      "scrollbar.shadow": "#16161e",
+      "scrollbarSlider.activeBackground": "#16161e",
+      "scrollbarSlider.background": "#16161e",
+      "scrollbarSlider.hoverBackground": "#16161e",
+      "sideBar.border": "#16161e",
+      "statusBar.border": "#16161e",
+      "statusBar.focusBorder": "#16161e",
+      "terminal.tab.activeBorder": "#16161e",
+      "terminalOverviewRuler.border": "#16161e",
+      "titleBar.activeBackground": "#1a1b26",
+      "titleBar.activeForeground": "#ff007c",
+      "titleBar.border": "#1a1b26",
+      "titleBar.inactiveBackground": "#1a1b26",
+      "titleBar.inactiveForeground": "#ff007c"
+    }
+  },
+
+  "[typescript][typescriptreact][javascript][javascriptreact][html][jsonc][json][html][css][yaml][spring-boot-properties-yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[csharp]": {
+    "editor.defaultFormatter": "csharpier.csharpier-vscode",
+    "editor.formatOnType": true
+  },
+  "[java]": {
+    "editor.defaultFormatter": "redhat.java"
+  }
+}

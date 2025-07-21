@@ -1,0 +1,82 @@
+[
+  {
+    "key": "ctrl+shift+7",
+    "command": "workbench.action.terminal.toggleTerminal"
+  },
+  {
+    "key": "ctrl+space",
+    "command": "workbench.action.quickOpen",
+    "when": "!editorFocus"
+  },
+  {
+    "key": "ctrl+x",
+    "command": "workbench.view.extensions",
+    "when": "viewContainer.workbench.view.extensions.enabled "
+  },
+  {
+    "key": "ctrl+x",
+    "command": "workbench.action.toggleSidebarVisibility",
+    "when": "!editorFocus"
+  },
+  {
+    "key": "ctrl+e",
+    "command": "workbench.view.explorer",
+    "when": "!editorFocus"
+  },
+  {
+    "key": "ctrl+e",
+    "command": "workbench.action.toggleSidebarVisibility",
+    "when": "explorerViewletFocus"
+  },
+  {
+    "key": "ctrl+a",
+    "command": "explorer.newFile",
+    "when": "explorerViewletFocus"
+  },
+  {
+    "key": "ctrl+r",
+    "command": "renameFile",
+    "when": "explorerViewletFocus"
+  },
+  {
+    "key": "ctrl+d",
+    "command": "deleteFile",
+    "when": "explorerViewletFocus"
+  },
+  {
+    "key": "ctrl+left",
+    "command": "workbench.action.decreaseViewWidth",
+    "when": "editorFocus"
+  },
+  {
+    "key": "ctrl+right",
+    "command": "workbench.action.increaseViewWidth"
+  },
+  {
+    "key": "ctrl+up",
+    "command": "workbench.action.increaseViewHeight",
+    "when": "editorFocus"
+  },
+  {
+    "key": "ctrl+down",
+    "command": "workbench.action.decreaseViewHeight",
+    "when": "editorFocus"
+  },
+
+  {
+    "key": "ctrl+right",
+    "command": "workbench.action.decreaseViewWidth"
+  },
+  {
+    "key": "ctrl+left",
+    "command": "workbench.action.increaseViewWidth"
+  },
+  {
+    "key": "ctrl+down",
+    "command": "workbench.action.increaseViewHeight"
+  },
+  {
+    "key": "ctrl+up",
+    "command": "workbench.action.decreaseViewHeight"
+  }
+]
