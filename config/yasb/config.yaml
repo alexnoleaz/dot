@@ -1,6 +1,5 @@
 watch_stylesheet: true
 watch_config: true
-hide_taskbar: true
 bars:
   primary-bar:
     enabled: true
@@ -118,7 +117,7 @@ widgets:
         on_middle: "do_nothing"
         on_right: "do_nothing"
       max_field_size:
-        label: 20
+        label: 30
       show_thumbnail: false
       icons:
         prev_track: "\udb81\udcae"
