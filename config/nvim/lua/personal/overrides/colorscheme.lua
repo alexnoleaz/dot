@@ -13,6 +13,7 @@ return {
         hl.DapUINormalNC = { bg = dark }
         hl.WinBarNC = { bg = dark }
         hl.WinBar = { bg = dark }
+        hl.EdgyWinBar = { bg = dark, fg = "#7AA2F7" }
         hl.TelescopeResultsBorder = { bg = dark, fg = dark }
         hl.TelescopeResultsTitle = { fg = dark }
         hl.TelescopePreviewBorder = { bg = dark, fg = dark }
